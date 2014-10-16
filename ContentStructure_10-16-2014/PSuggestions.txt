@@ -1,0 +1,29 @@
+Defect:
+Predictive. Any case study or the less specific data goes under predictive.
+Software Evaluation. Mostly OO evaluation of code.
+Bug Tracking. Data related to software bugs specifically.
+Issue Tracking. Data specifically relating to issue tracking systems or problem tracking.
+
+Effort:
+Predictive. Pretty much all the effort data falls into this category.
+Possibly further categorize the data based on model used, but that requires a more flexible file system.
+
+Requirements, a rename of Text:
+The first record in Text belongs under Defect. Later added records conveniently fit in a Requirements category, hence the rename. Still only 2 records to draw from.
+
+Model:
+Only 2 records to draw from. Not enough to generate further subcategories.
+
+NRP:
+Only 2 records to draw from. Not enough to generate further subcategories.
+
+Miscellaneous, a rename of General:
+Majority of records in General belong elsewhere (such as under Effort). Renaming the category may help.
+
+
+
+Most usability of the program cannot come from a simple hierarchy; we will need heavy search functionality.
+Keep descriptions focused on the specific data, otherwise searches will become inflated.
+Allow custom tags when submitting or editing data? Emphasizing keywords or methods used.
+
+We need ways to not only make the data easier to find, but also easier to identify what data is in the wrong location. Because people will add data to the completely wrong category in such a vague system.

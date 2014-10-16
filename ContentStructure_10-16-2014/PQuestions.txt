@@ -1,0 +1,33 @@
+Sort by file types at all?
+	Sort by model of data at all? Could make file system hierarchy easier later...
+What about data sets that fall under two groups?
+Different versions of data sets?
+What are the exact complaints about promise as it is now?
+Promise does not match the file structure of the promise repo?
+Do we have anything more useful than just the google code promisedata website?
+	Like, how was the promisedata site generated?
+Page names are not standardized; should we come up with some standard?
+The display headings in promise are not all the same; some fields can be left out. (ie nasa93)
+
+
+Some data is in a file system hierarchy, more than in an actual file. (ie ABACUS)
+	How to handle this? Find a way to duplicate the hierarchy in TP, or just store the zip?
+	Do we merge data into similar hierarchies in the future, or store each as a separate file?
+Some datasets have several files, and those files follow a very specific format. (ie modis)
+	Once again, we could just give the record it's own folder, but that is harder on users.
+	These files are not necessarily all in one folder already, we'd have to do that ourselves.
+Some datasets are in entirely different records. (ie pitsA - pitsF)
+	Do we try to merge these records into one folder?
+
+Should we attempt to handle adding data to a record continuously over time?
+	Either update a record every time new data is available, leading to confusion, or...
+	Add a new record every time new data is available, leading to inflated file numbers, or...
+	Attach new data to an existing similar record's file structure, requiring somewhat 		standardized file structures.
+
+
+This is looking like we will need some form of dynamic file structure, such that a record gets its own subdirectory, which needs to be navigable from within the TP repository website somehow.
+This will require some extensive knowledge of Jekyll, since we would want some way of generating the webpages based on the file structure of the html files
+
+
+{ try site.categories.journal }
+NOTE: img folder is being used to hold images for webpages
