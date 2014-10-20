@@ -1,0 +1,61 @@
+# HOW TO READ THIS FILE:
+# All Category Names are not intended to be final, and are subject to change.
+# Categories may be added or removed over time, as deemed appropriate.
+# The file format is as follows:
+#
+#	(Category Name): (Confidence that it belongs in Hierarchy [1-10])
+#		(Category Description)
+#		
+#		(Sub-Category Name): (Confidence that it belongs in Hierarchy [1-10])
+#		(Category Description)
+#			(Sub-Sub-Category Name): ...
+#
+#		Sub-Category Name): ...
+
+Prediction: 3
+	Data with a class attribute describing some predictable feature of a software process
+
+	Defect: 9
+		Data containing an attribute related to defect prediction
+		Bug Tracking: 6
+			Data from bug repository commits or changes
+		Code Evaluation: 8
+			Data from software analysis methods
+			CK: 8
+				Data using the Chidamber and Kemerer metrics
+			MH: 7
+				Data using the McCabe and Halstead metrics
+		Issue Tracking: 6
+			Data from issue tracking systems or methods
+	Effort: 7
+		Data containing an attribute related to effort estimation
+		COBOL: 2
+			Data from analysis of the COBOL language
+		Cocomo I: 5
+			Data conforming to the Cocomo I model
+		Cocomo II: 5
+			Data conforming to the Cocomo II model
+		Function Points: 4
+			Data using function points attributes
+		ISBSG: 2
+			Data conforming to the ISBSG's model of effort estimation
+		Personnel: 1
+			Data using individual personnel attributes, as contrasted with software attributes
+	Requirements: 4
+		Data containing an attribute related to requirement prediction
+		NRP: 3
+			Data using the Next Release Problem model
+
+Repository Use: 2
+	Data without a class attribute derived from repository logs.
+	(NOTE: Low confidence score means that this category should be merged with another if possible.)
+
+Miscellaneous: 8
+	Any data that appears to be an outlier; Description of data is included
+
+Model: 6
+	Data that can be used to model a system; (NOTE: Currently small sample size)
+
+
+# Datasets with not quite enough of a description, or with no name for the metric/model used, are
+# categorized in the most specific category possible for now.

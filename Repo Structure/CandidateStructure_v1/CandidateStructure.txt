@@ -1,0 +1,116 @@
+Prediction {
+	Defect {
+		Bug Tracking {
+			bugreport { eclipse, gnome, mozilla }
+			datatrieve
+			mozilla4
+			mozilla13
+			mtdjedit
+		}
+		Code Evaluation {
+			Chidamber & Kemerer (CK) {
+				ant { 1.3, 1.4, 1.5, 1.6, 1.7 }
+				arc
+				berek
+				camel { 1.0, 1.2, 1.4, 1.6 }
+				ckjm
+				elearning
+				forrest { 0.6, 0.7, 0.8 }
+				intercafe
+				ivy { 1.1, 1.4, 2.0 }
+				jedit { 3.2, 4.0, 4.1, 4.2, 4.3 }
+				kalkulator
+				log4j { 1.0, 1.1, 1.2 }
+				lucene { 2.0, 2.2, 2.4 }
+				nieruchomosci
+				pbeans { 1, 2 }
+				pdftranslator
+				poi { 1.5, 2.0, 2.5, 3.0 }
+				prop { 1, 2, 3, 4, 5, 6 }
+				redaktor
+				serapion
+				skarbonka
+				sklebagd
+				synapse { 1.0, 1.1, 1.2 }
+				systemdata
+				szybkafucha
+				termoproject
+				tomcat
+				velocity { 1.4, 1.5, 1.6 }
+				workflow
+				wspomaganiepi
+				xalan { 2.4, 2.5, 2.6, 2.7 }
+				xerces { init, 1.2, 1.3, 1.4 }
+				zuzel
+			}
+			McCabe & Halstead (MH) {
+				ar { 1, 3, 4, 5, 6 }
+				CM { 1 }
+				jm { 1 }
+				kc { 2, 3 }
+				mc { 1, 2 }
+				mw { 1 }
+				pc { 1, 2, 3, 4, 5 }
+			}
+			ABACUS2013
+			spe (data is in Chinese?)
+		}
+		Issue Tracking {
+			am1
+			pits { A, B, C, D, E, F }
+			wb2
+		}
+	}
+	Effort {
+		COBOL {
+			miyazaki94
+		}
+		Cocomo I {
+			coc81
+			nasa93
+		}
+		Cocomo II {
+			cocomosdr
+			nasa93-dem
+		}
+		Function Points {
+			Albrecht
+			china (Unknown Source)
+			kemerer (Unknown Source)
+			kitchenham
+		}
+		ISBSG {
+			cosmic
+			isbsg10
+		}
+		Personnel {
+			boetticher
+		}
+		maxwell (Unknown Source) (No Data Description)
+	}
+	Requirements {
+		NRP {  // Next Release Problem FILES HAVE NO DESCRIPTION
+			nrpClassic
+			nrpRealistic
+		}
+		modis
+		nfr (Unknown Source)
+	}
+}
+Repository Use {
+	Logitudinal Analysis {
+		nickel
+		xfree
+		xorg
+	}
+	reuse
+}
+Miscellaneous {
+	cmmi : Measurement and Analysis Surveys
+	generics : Adoption of Java Generics (Unknown Source)
+	qosdata : Component Quality, Response Time, and Memory Usage
+}
+Model {
+	bike
+	quantitative (Matlab files)
+}
