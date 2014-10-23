@@ -46,7 +46,7 @@ Prediction: 3
 		NRP: 3
 			Data using the Next Release Problem model
 
-Repository Use: 2
+Repository: 2
 	Data without a class attribute derived from repository logs.
 	(NOTE: Low confidence score means that this category should be merged with another if possible.)
 

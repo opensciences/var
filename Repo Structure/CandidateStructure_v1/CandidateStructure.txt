@@ -97,13 +97,11 @@ Prediction {
 		nfr (Unknown Source)
 	}
 }
-Repository Use {
-	Logitudinal Analysis {
-		nickel
-		xfree
-		xorg
-	}
+Repository {
+	nickel
 	reuse
+	xfree
+	xorg
 }
 Miscellaneous {
 	cmmi : Measurement and Analysis Surveys
