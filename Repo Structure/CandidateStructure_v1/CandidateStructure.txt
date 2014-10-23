@@ -1,14 +1,22 @@
-Prediction {
-	Defect {
-		Bug Tracking {
+# lower case not space for all
+
+ 
+	issues {
 			bugreport { eclipse, gnome, mozilla }
 			datatrieve
 			mozilla4
 			mozilla13
 			mtdjedit
+			
+				===> go away Issue Tracking {
+			am1
+			pits { A, B, C, D, E, F }
+			wb2
 		}
-		Code Evaluation {
-			Chidamber & Kemerer (CK) {
+	}
+	Defect {
+ 	  	 
+		ck {
 				ant { 1.3, 1.4, 1.5, 1.6, 1.7 }
 				arc
 				berek
@@ -43,7 +51,7 @@ Prediction {
 				xerces { init, 1.2, 1.3, 1.4 }
 				zuzel
 			}
-			McCabe & Halstead (MH) {
+			mccabehalsted {
 				ar { 1, 3, 4, 5, 6 }
 				CM { 1 }
 				jm { 1 }
@@ -52,27 +60,24 @@ Prediction {
 				mw { 1 }
 				pc { 1, 2, 3, 4, 5 }
 			}
-			ABACUS2013
+			dumps into dumps
 			spe (data is in Chinese?)
 		}
-		Issue Tracking {
-			am1
-			pits { A, B, C, D, E, F }
-			wb2
-		}
+	
 	}
 	Effort {
 		COBOL {
 			miyazaki94
 		}
-		Cocomo I {
-			coc81
-			nasa93
-		}
-		Cocomo II {
-			cocomosdr
-			nasa93-dem
-		}
+		Cocomo
+			Cocomo I {
+				coc81
+				nasa93
+			}
+			Cocomo II {
+				cocomosdr
+				nasa93-dem
+			}
 		Function Points {
 			Albrecht
 			china (Unknown Source)
@@ -86,7 +91,8 @@ Prediction {
 		Personnel {
 			boetticher
 		}
-		maxwell (Unknown Source) (No Data Description)
+		other
+			maxwell (Unknown Source) (No Data Description)
 	}
 	Requirements {
 		NRP {  // Next Release Problem FILES HAVE NO DESCRIPTION
@@ -96,14 +102,15 @@ Prediction {
 		modis
 		nfr (Unknown Source)
 	}
-}
+ 
 Repository {
 	nickel
 	reuse
 	xfree
 	xorg
+	abcus
 }
-Miscellaneous {
+Other {
 	cmmi : Measurement and Analysis Surveys
 	generics : Adoption of Java Generics (Unknown Source)
 	qosdata : Component Quality, Response Time, and Memory Usage
