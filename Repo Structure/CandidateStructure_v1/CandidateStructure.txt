@@ -11,7 +11,7 @@
 				===> go away Issue Tracking {
 			am1
 			pits { A, B, C, D, E, F }
-			wb2
+			mb2
 		}
 	}
 	Defect {
