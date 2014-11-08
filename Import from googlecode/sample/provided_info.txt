@@ -1,0 +1,4 @@
+wiki file: ant.wiki
+_posts directory: /repo/defect/ck/_posts
+date: 2010-07-26
+new url: https://terapromise.csc.ncsu.edu:8443/svn/content/trunk/defect/ck/ant/
