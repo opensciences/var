@@ -1,0 +1,4 @@
+#summary About Jelber Sayyad
+#labels Who
+
+Organizer of  PSM'04, the Predictive Software Modeling Workshop, that was the progenitor of the PROMISE conference.

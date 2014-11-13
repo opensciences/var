@@ -1,0 +1,99 @@
+#summary Notes for the team porting repo3 to repo4
+#labels Discuss
+
+<wiki:toc max_depth="2" />
+
+= Setting up =
+
+{{{
+svn checkout https://promisedata.googlecode.com/svn promise --username yourGoogleId@gmail.com
+}}}
+
+= How to Start =
+
+  # Find a data set [https://docs.google.com/spreadsheet/ccc?key=0AqtLfKAJzgNrdDFuMDhZVVNrYUhLQUVPbVNQLUJ3TVE#gid=0 assigned to you].
+  # Find the data. See http://promisedata.org/tmp/data/
+  # Find the comments on that data. See http://promisedata.org/?cat=11
+  
+= What to do =
+
+  # Create a data files in a new directory in trunk/
+  # Create a wiki entry in wiki/
+  # In the wiki file, add a pointer to the trunk.
+  # In the new directory, add a README.txt file that points back to the Wiki
+  # Move as many comment file contents to the wiki entry, then delete comment files in trunk/.
+  # If there are non-ascci files in the trunk/ make sure their mime type is set correctly.
+
+{{{
+svn propset svn:eol-style native *.html
+svn propset svn:eol-style native *.txt
+svn propset svn:eol-style native *.sh
+svn propset svn:eol-style native *.svg
+svn propset svn:mime-type image/gif *.gif
+svn propset svn:mime-type image/jpeg *.jpg
+svn propset svn:mime-type image/bmp *.bmp
+svn propset svn:mime-type application/pdf *.pdf
+}}}
+
+Finally, ask someone to review your work.
+
+= Review check list =
+
+ # README.txt points to wiki entry and wiki entry points back to trunk,
+ # All pdfs have the right mime type
+ # All wiki pages:
+   # include a TOC and change history.
+   # have one of the pre-defined labels
+
+= Editing Notes =
+
+== Pointer File ==
+
+Each data set gets a "README.txt" file that points people to a related WIKI page.
+
+Example file:
+{{{
+To read/write comments on this data, see
+http://code.google.com/p/promisedata/wiki/am1 .
+}}}
+
+== Wiki Files ==
+
+If you add a url from the wiki page to a web site:
+  * Make sure you find the _public_ url (i.e. surf there in a private Google Chrome window)
+  * Use (e.g. goo.gl to shorten complex urls to simpler ones.
+ 
+Each file gets an related WIKI page in wiki/XXX.wiki with at least:
+
+  * A table of contents
+  * Url : 
+    * Latest version: pointer to the raw versions
+    * With change log: pointer back to the version browse-able section
+  * Change history
+  * References: original source (if known), where used (if known)
+
+Make sure every wiki file has a label.
+
+== Auto Version Numbers ==
+
+Files in this repo have two kinds of version numbers:
+
+  # Numbers that reference external entities: e.g. this repo stores several versions of the _ant_ system and we need to hold those files as seperate files.
+  # Numbers that reference internal changes;  e.g. there have been several patches to nasa93 over the years and when a newbie comes to PROMISE, they should the default view should be onto the latest version.  
+
+For the internal reference changes, we add auto-version numbers (using subversion) to each data file.
+
+So instead of cm1-v1, cm-v2, etc, then plan is to:
+
+  * Copy cmv1-v1 into data/defects/cm1/cm1.arff
+  * Commit that file.
+  * Copy cmv1-v2 into data/defects/cm1/cm1.arff
+  * Commit that file
+  * etc
+
+Now, for these internal reference changes, every file exists in the repo but with different version numbers.
+
+= Details =
+
+  * Some arffs mention the old ottawa repo. Remove that reference
+  

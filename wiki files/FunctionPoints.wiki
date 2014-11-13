@@ -1,0 +1,31 @@
+#summary about function points
+#labels Tutorial
+
+<wiki:toc max_depth="2" />
+
+A function point is a unit of measurement to express the amount of business functionality an information system provides to a user. The cost (in dollars or hours) of a single unit is calculated from past projects.
+
+For software effort estimation,
+many have advocated (e.g. [Albrecht Albrecht and Gaffney]) the use of function points instead of SLOC as a measure of functionality.
+(but note that  since function points are highly correlated to SLOC, and cannot be automatically measured, this is not a universally held view).
+
+For more on functions points, see [http://en.wikipedia.org/wiki/Function_point their Wikipedia page].
+
+|| *measure* || *means* || *notes* ||
+||afp  ||  adjusted function points ||  adjusted size by the standard value adjustment factor (vaf)||
+|| input  ||  function points (ufp) of input||
+||output   ||  function points (ufp) of external output ||
+||enquiry  ||  function points (ufp) of external enquiry||
+||file  ||  function points (ufp) of internal logical files or entity references||
+||interface  || function points (ufp) of external interface||
+||added   || function points (ufp) of new or added functions ||
+||changed  ||   function points (cfp) of changed functions||
+||deleted  ||   function points (cfp) of deleted functions||
+||pdr`_`ufp  ||  normalized level 1 productivity delivery rate  ||  norm. level 1 effort (for development team ) divided by functional size (unadjusted function points). ||
+||npdr`_`afp  ||  normalized productivity delivery rate  ||  normalized effort divided by functional size (unadjusted function points). ||
+|| npdu`_`ufp  ||  productivity delivery rate (adjusted function points)  ||  summary work effort divided by adjusted function point count. ||
+||resource  ||  team type  ||  1 = development team effort (e.g., project team, project management) ; 2 = development team support (e.g., database administration, data administration, quality assurance) ; 3 = computer operations involvement (e.g., information center support, computer operators, network administration) ' 4 = end users or clients (e.g., user liaisons, user training time)||
+|| dev.type  ||  development type  ||  1= new development, 2= enhancement; 3= redevelopment.||
+||duration  ||  total elapsed time for the project  ||  in calendar months.||
+||effort  ||  summary work effort  ||  provides the total effort in hours recorded against the project.||
+

@@ -1,0 +1,35 @@
+#summary Marian Jureczko
+#labels Who
+
+<wiki:toc max_depth="2" />
+
+About
+  * Publications: http://staff.iiar.pwr.wroc.pl/marian.jureczko/publikacje.html
+
+Career: 
+
+  * Scrum Master at NetworkedAssets, Poland, 2011-...
+  * Software developer at Capgemini, Poland, 2007-2011
+  * Ph.D. student at Wrocław University of Technology, Poland, 2006-2012
+  * Masters student at Wrocław University of Technology, Poland, 2001-2006
+
+Contributed Datasets
+
+<ul>
+<li>Each of these datasets uses the [Chidamber CK] OO metrics.</li>
+<li>First appeared in: Marian Jureczko and Lech Madeyski. 2010. [http://dl.acm.org/citation.cfm?id=1868328.1868342&coll=DL&dl=GUIDE&CFID=96280125&CFTOKEN=47274353 Towards identifying software project clusters with regard to defect prediction]. In
+Proceedings of the 6th International Conference on Predictive
+Models in Software Engineering (PROMISE '10). ACM, New York,
+NY, USA, , Article 9 , 10 pages. DOI=10.1145/1868328.1868342
+http://doi.acm.org/10.1145/1868328.1868342</li>
+<li> 
+|| [ant] || [arc] || [berek] || [camel] || [ckjm] ||
+|| [elearning] || [forrest] || [intercafe] || [ivy] || [jedit] ||
+|| [kalkulator] || [log4j] || [lucene] || [nieruchomosci] || [pbeans] ||
+|| [pdftranslator] || [poi] || [prop] || [redaktor] || [serapion] || 
+|| [skarbonka] || [sklebagd] || [synapse] || [systemdata] || [szybkafucha] ||
+|| [termoproject] || [tomcat] || [velocity] || [workflow] || [wspomaganiepi] ||
+|| [xalan] || [xerces] || [zuzel] || || ||
+</li>
+
+</ul>

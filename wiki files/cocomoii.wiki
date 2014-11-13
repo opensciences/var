@@ -1,0 +1,52 @@
+#summary Notes on the COCOMO II model
+#labels Tutorial
+
+<wiki:toc max_depth="2" />
+
+Several data sets in PROMISE use data in the Cocomo81 format:
+  * [cocomosdr]
+
+The COCOMO software cost model measures effort in calendar months of 152
+hours (and includes development and management hours). COCOMO assumes that
+the effort grows more than linearly on software size; i.e. `months=a{{{*}}}
+KSLOC^b{{{*}}}c`. Here, "a" and "b" are domain-specific parameters; "KSLOC"
+is estimated directly or computed from a function point analysis; and
+"c" is the product of over a dozen "effort multipliers". I.e.
+
+Exponential Cost Drivers (contributes to "b")
+  *			PREC: Precedentedness 
+  *			FLEX: Development Flexibility 
+  *			RESL: Arch/Risk Resolution 
+  *			TEAM: Team Cohesion 
+  *			PMAT: Process Maturity 
+
+Product Factors (contributes to "c")
+  *			RELY: Required Software Reliability
+  *			DATA: Database Size 
+  *			CPLX: Product Complexity 
+  *			RUSE: Required Reusability 
+  *			DOCU: Documentation match to life-cycle needs
+
+Platform Factors (contributes to "c")
+  *		TIME: Execution Time Constraint 
+  *			STOR: Main Storage Constraint 
+  *			PVOL: Platform Volatility 
+
+Personnel Factors (contributes to "c")
+  *			ACAP: Analyst Capability 
+  *			PCAP: Programmer Capability 
+  *			PCON: Personnel Continuity 
+  *			AEXP: Applications Experience 
+  *			PEXP: Platform Experience 
+  *			LTEX: Language and Tool Experience
+
+Project Factors (contributes to "c")
+  *			TOOL: Use of Soft. Tools
+  *			SITE: Multisite Development 
+  *			SCED: Development Schedule 
+
+Input:
+  *			LOC:Lines of Code
+
+Output:
+  *			ACTUAL EFFORT: Effort spent for project in terms of man month

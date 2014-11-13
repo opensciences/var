@@ -1,0 +1,21 @@
+#summary About Zhimin He
+#labels Who
+
+
+http://promisedata.googlecode.com/svn/trunk/img/zhimin.jpg
+
+
+
+About: 
+
+  * [http://124.16.139.190/cn/membersHomepage/hezhimin/ZhiminHe.htm Home Page]
+  * [http://124.16.139.190/cn/membersHomepage/hezhimin/ZhiminHe.htm Publications]
+
+Career:
+
+  * Ph.D. student at Institute of Software Chinese Academy of Sciences, China    2008.09-2013.12(expected)
+  * Visiting Scholar at West Virginia University, USA    2012.11- 2013.04
+
+Role:
+ 
+  * Help to maintain the PROMISE data repository.

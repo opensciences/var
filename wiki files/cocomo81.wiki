@@ -1,0 +1,123 @@
+#summary Notes on COCOMO 1
+#labels Tutorial
+
+<wiki:toc max_depth="2" />
+
+Several data sets in PROMISE use data in the Cocomo81 format:
+  * [nasa93]
+  * [coc81]
+
+The COCOMO software cost model measures effort in calendar months of 152 hours (and includes development and management hours). COCOMO assumes that the effort grows more than linearly on software size; i.e. `months=a* KSLOC^b*c`. Here, "a" and "b" are domain-specific parameters; "KSLOC" is estimated directly or computed from a function point analysis; and "c" is the product of over a dozen "effort multipliers". I.e.
+
+|| `months=a*(KSLOC^b)'(EM1* EM2 * EM3 * ...)` ||
+
+The effort multipliers are in three groups.
+
+Group1: Increase these to decrease effort:
+
+|| acap || analysts capability         ||
+|| pcap || programmers capability      ||
+|| aexp || application experience      ||
+|| modp || modern programing practices ||
+|| tool || use of  software tools      ||
+|| vexp || virtual machine experience  ||
+|| lexp || language experience         ||
+
+Group2: Decrease these to decrease effort:
+
+
+|| stor || main memory constraint      ||
+|| data || data base size              ||
+|| time || time constraint for cpu     ||
+|| turn || turnaround time             ||
+|| virt || machine volatility          ||
+|| cplx || process complexity          ||
+|| rely || required software reliability ||
+
+Group 3: The third group contains just oen attribute that has a "U"-shaped relationship to effort in which low and high values increase effort.
+
+|| sced || schedule constraint         ||
+
+In COCOMO I, the exponent on KSLOC was a single value ranging from 1.05 to 1.2.  In COCOMO II, the exponent "b" was divided into a constant, plus the sum of five "scale factors" which modeled issues such as ``have we built this kind of system before?''.  The COCOMO~II effort multipliers are similar but COCOMO~II dropped one of the effort multiplier parameters; renamed some others; and added a few more (for "required level of reuse", "multiple-site development", and "schedule pressure").
+
+The effort multipliers fall into three groups: those that are positively correlated to more effort; those that are negatively correlated to more effort; and a third group containing just schedule information. In COCOMO~I, "sced" has a U-shaped correlation to effort; i.e. giving programmers either too much or too little time to develop a system can be detrimental.
+
+The numeric values of the effort multipliers are:
+
+||      || very || low  || low  ||nominal||very high||extra high||productivity high range||
+|| acap || 1.46 || 1.19 || 1.00 || 0.86 || 0.71 ||      || 2.06  ||
+|| pcap || 1.42 || 1.17 || 1.00 || 0.86 || 0.70 ||      || 1.67  ||
+|| aexp || 1.29 || 1.13 || 1.00 || 0.91 || 0.82 ||      || 1.57  ||
+|| modp || 1.24 || 1.10 || 1.00 || 0.91 || 0.82 ||      || 1.34  || 
+|| tool || 1.24 || 1.10 || 1.00 || 0.91 || 0.83 ||      || 1.49  ||
+|| vexp || 1.21 || 1.10 || 1.00 || 0.90 ||      ||      || 1.34  ||
+|| lexp || 1.14 || 1.07 || 1.00 || 0.95 ||	||      || 1.20  ||
+|| sced || 1.23 || 1.08 || 1.00 || 1.04 || 1.10 ||      || e     ||
+|| stor ||      ||      || 1.00 || 1.06 || 1.21 || 1.56 || -1.21 ||
+|| data ||   	|| 0.94 || 1.00 || 1.08 || 1.16	||	|| -1.23 ||
+|| time ||   	||    	|| 1.00 || 1.11 || 1.30 || 1.66	|| -1.30 ||
+|| turn ||   	|| 0.87 || 1.00 || 1.07 || 1.15 ||  	|| -1.32 ||
+|| virt ||   	|| 0.87 || 1.00 || 1.15 || 1.30 ||	|| -1.49 ||
+|| rely || 0.75	|| 0.88	|| 1.00 || 1.15 || 1.40	||      || -1.87 ||
+|| cplx || 0.70 || 0.85 || 1.00 || 1.15 || 1.30 || 1.65	|| -2.36 ||
+
+
+These were learnt by Barry Boehm after a regression analysis of the projects in the COCOMO I data set.
+  
+  `@Book{boehm81,` <br>
+  `Author    =	 "B. Boehm",` <br>
+  `Title     =	 "Software Engineering Economics",` <br>
+  `Publisher =	 "Prentice Hall",` <br>
+  `Year      =	 1981}`
+
+
+The last column of the above table shows max(E)/min(EM) and shows the overall effect of a single effort multiplier. For example, increasing "acap" (analyst experience) from very low to very high will most decrease effort while increasing "rely" (required reliability) from very low to very high will most increase effort.
+
+There is much more to COCOMO that the above description. The COCOMO~II text is over 500 pages long and offers all the details needed to implement data capture and analysis of COCOMO in an industrial context.
+
+  `@Book{boehm00b,` <br>
+  `Author = "Barry Boehm and Ellis Horowitz and Ray Madachy and Donald Reifer and Bradford K. Clark and Bert Steece and A. Winsor Brown and Sunita Chulani and Chris Abts",` <br>
+  `Title = "Software Cost Estimation with Cocomo II",` <br>
+  `Publisher = "Prentice Hall",` <br>
+  `Year = 2000,` <br>
+  `ibsn = "0130266922"}`
+
+
+Included in that book is not just an effort model but other models for schedule, risk, use of COTS, etc.  However, most (?all) of the validation work on COCOMO has focused on the effort model.
+
+  `article{chulani99,` <br>
+  `author =	 "S. Chulani and B. Boehm and B. Steece",` <br>
+  `title =	 "Bayesian Analysis of Empirical Software Engineering Cost Models",` <br>
+  `journal =	 "IEEE Transaction on Software Engineering",` <br>
+  `volume =	 25,` <br>
+  `number =	 4,` <br>
+  `month =	 "July/August",` <br>
+  `year =	 "1999"}`
+
+
+The value of an effort predictor can be reported many ways including MMRE and PRED(N).MMRE and PRED are computed from the relative error, or RE, which is the relative size of the difference between the actual and estimated value:
+ 
+  `RE.i = (estimate.i - actual.i) / (actual.i)`
+
+Given a data set of of size "D", a "Train"ing set of size `"(X=|Train|) <= D"`, and a "test" set of size `"T=D-|Train|"`, then the mean magnitude of the relative error, or MMRE, is the percentage of the absolute values of the relative errors, averaged over the "T" items in the "Test" set; i.e.
+
+  `MRE.i  = abs(RE.i)` <br>
+  `MMRE.i = 100/T*( MRE.1 + MRE.2 + ... + MRE.T)`
+
+PRED(N) reports the average percentage of estimates that were within N% of the actual values:
+
+  `count=0` <br>
+  `for(i=1;i<=T;i++) do if (MRE.i <= N/100) then count++ fi done` <br>
+  `PRED(N) = 100/T * sum`
+
+For example, e.g. PRED(30)=50% means that half the estimates are within 30% of the actual.  Shepperd and Schofield comment that "MMRE is fairly conservative with a bias against overestimates while Pred(25) will identify those prediction systems that are generally accurate but occasionally wildly inaccurate".
+
+  '@article{shepperd97,' <br>
+  'author="M. Shepperd and C. Schofield",' <br>
+  'title="Estimating Software Project Effort Using Analogies",' <br>
+  'journal="IEEE Transactions on Software Engineering",' <br>
+  'volume=23,' <br>
+  'number=12,' <br>
+  'month="November",' <br>
+  'year=1997,' <br>
+  'note="Available from \url{http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=637387}"}'

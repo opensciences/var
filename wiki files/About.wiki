@@ -1,0 +1,24 @@
+#summary Main Page
+#labels Discuss,Featured
+= Introduction =
+
+This is the web site for the PROMISE repository of data for repeatable experiments in Software Engineering
+
+All data on this site is free to use.
+
+We strongly encourage new [Contribute contributions] to this site.
+
+= History =
+
+|| When || What ||
+|| Mar'03|| MikeChapman organizes the NASA Metrics Data Program to distribute data from NASA projects||
+|| Apr'04|| JelberSayyad organizes PSM'04:  the Predictive Software Modeling Workshop||
+|| Sept'04 || TimMenzies   attends PSM'04. Proposes an on-line repo of SE data ||
+|| Dec'04 ||  Repo v1.0 created from NASA data.  Hosted at UOttawa||
+|| May'05 || TimMenzies and JelberSayyad organize PROMISE'05, a venue where authors are encouraged to submit the data they use in their papers. PROMISE has meet every year since then. ||
+|| 2005 || Promise repo v2.0 on-line, written in TimMenzies' hacked up M4 macros, hosted at promisedata.org ||
+|| 2007 || Promise repo v3.0 on-line ported to Wordpress by GregoryGay ||
+|| 2009 || Repo now contains 100+ data sets ||
+|| Mar'12 || The great hack attack. Repo 3.0 down ||
+|| May'12 || Prose repo v4.0 on-line at promisedata.googlecode.com|| 
+

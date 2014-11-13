@@ -1,0 +1,34 @@
+#summary About Tim Menzies
+#labels Who
+
+
+http://promisedata.googlecode.com/svn/trunk/img/timmenzies.jpg
+
+About: 
+
+  * [http://menzies.us Home Page]
+  * [http://scholar.google.com/citations?user=Qmuz0WAAAAAJ&hl=en Publications]
+
+Career:
+
+  * 2006-2012: Associate Professor, CS, WVU, 
+  * 2005: Freelance researchers  
+  * 2002-2004: Software research chair, NASA/WVU 
+  * 2000-2001: Assistant professor, EE, UBC
+  * 1998-2000: Research assistant professor, NASA
+  * 1991 - 1995: Ph.D. UNSW, Australia
+
+Role:
+ 
+  * 2012: Worked on porting Promisedata.org to promisedata.googlecode.com
+  * 2006- now: Curator, Promise repo, 
+  * 2005: with JelberSayyad, proposed the first PROMISE conference and repo. 
+
+= Related Datasets =
+
+|| [cm1]         || [coc81]       || [cocomonasa1] || [jm1]         || [kc1]         || [kc2]    ||
+|| [kc3]         || [mb2]         || [mc1]         || [mc2]         || [mw1]         || [nasa93] ||
+|| [pc1]         || [pc2]         || [pc3]         || [pc4]         || [pc5]         || [reuse]  ||
+|| [model1]      || [model2]      || [model3]      || [model4]      || [model5]      || [pits pitsA]  ||
+|| [pits pitsB]  || [pits pitsC]  || [pits pitsD]  || [pits pitsE]  || [pits pitsF]  || [ar3]    ||
+|| [ar4]         || [ar5]         || [cm1req]      || [jm1req]      || [pc1req]      ||          ||

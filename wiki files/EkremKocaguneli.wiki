@@ -1,0 +1,16 @@
+#labels Who
+http://2.bp.blogspot.com/-u-fN_k5pBWs/TwaTNDPJj7I/AAAAAAAAAVs/-0xdNELrUOQ/s780/ekrem.jpg
+
+About: 
+
+  * [http://www.kocaguneli.com/ Home Page]
+  * [http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/k/Kocaguneli:Ekrem.html Publications]
+
+Career:
+
+  * Masters student at Bogacizi University, Turkey, 2009- 2009
+  * Ph.D. student at West Virginia University 2010-2012
+
+Role:
+ 
+  * Worked on porting Promisedata.org to promisedata.googlecode.com

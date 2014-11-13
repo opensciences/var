@@ -1,0 +1,34 @@
+#labels Tutorial
+=Halstead Metrics=
+
+The Halstead metrics falls into three groups: 
+  # the base measures, 
+  # the derived measures, 
+  # and lines of code measures.
+
+  * Base measures: 
+    * mu1 = number of unique operators
+    * mu2             = number of unique operands
+    * N1              = total occurrences of operators
+    * N2              = total occurrences of operands
+    * length     = N  = N1 + N2
+    * vocabulary = mu = mu1 + mu2
+    * Constants set for each function:
+      * mu1' =  potential operator count (just the function name and the "return" operator)
+      * mu2'      = potential operand count (the number of arguments to the module)  
+
+      
+For example, the expression "return max(w+x,x+y)" has "N1=4" operators "return, max, +,+)", "N2=4" operands (w,x,x,y), "mu1=3" unique operators (return, max,+), and "mu2=3" unique operands (w,x,y).
+
+
+  * Derived measures:
+    * P = volume = V = N _x_ log2(mu) (the number of mental comparisons needed to write a program of length N)
+    * V`*` = volume on minimal implementation = (2 + mu2') _x_ log2(2 + mu2')
+    * L  = program length = V`*`/N
+    * D  = difficulty = 1/L
+    * L' = 1/D 
+    * I  = intelligence = L' _x_ V'
+    * E  = effort to write program = V/L 
+    * T  = time to write program = E/18 seconds
+
+For notes on defect prediction and the relation of Halstead measures to defect predictors, please refer to our short tutorial on defect prediction [http://code.google.com/p/promisedata/wiki/ShortTutorialOnDefectPrediction here].
