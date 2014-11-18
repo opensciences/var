@@ -1,0 +1,229 @@
+{
+    "defect": {
+        "ck": {
+            "complex": {
+                "ant": [
+                    "1.3",
+                    "1.4",
+                    "1.5",
+                    "1.6",
+                    "1.7"
+                ],
+                "camel": [
+                    "1.0",
+                    "1.2",
+                    "1.4",
+                    "1.6"
+                ],
+                "forrest": [
+                    "0.6",
+                    "0.7",
+                    "0.8"
+                ],
+                "ivy": [
+                    "1.1",
+                    "1.4",
+                    "2.0"
+                ],
+                "jedit": [
+                    "3.2",
+                    "4.0",
+                    "4.1",
+                    "4.2",
+                    "4.3"
+                ],
+                "log4j": [
+                    "1.0",
+                    "1.1",
+                    "1.2"
+                ],
+                "lucene": [
+                    "2.0",
+                    "2.2",
+                    "2.4"
+                ],
+                "pbeans": [
+                    "1",
+                    "2"
+                ],
+                "poi": [
+                    "1.5",
+                    "2.0",
+                    "2.5",
+                    "3.0"
+                ],
+                "prop": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6"
+                ],
+                "synapse": [
+                    "1.0",
+                    "1.1",
+                    "1.2"
+                ],
+                "velocity": [
+                    "1.4",
+                    "1.5",
+                    "1.6"
+                ],
+                "xalan": [
+                    "2.4",
+                    "2.5",
+                    "2.6",
+                    "2.7"
+                ],
+                "xerces": [
+                    "init",
+                    "1.2",
+                    "1.3",
+                    "1.4"
+                ]
+            },
+            "simple": [
+                "arc",
+                "berek",
+                "ckjm",
+                "elearning",
+                "intercafe",
+                "kalkulator",
+                "nieruchomosci",
+                "pdftranslator",
+                "redaktor",
+                "serapion",
+                "skarbonka",
+                "sklebagd",
+                "systemdata",
+                "szybkafucha",
+                "termoproject",
+                "tomcat",
+                "workflow",
+                "wspomaganiepi",
+                "zuzel"
+            ]
+        },
+        "mccabehalsted": {
+            "ar": [
+                "1",
+                "3",
+                "4",
+                "5",
+                "6"
+            ],
+            "CM": [
+                "1"
+            ],
+            "jm": [
+                "1"
+            ],
+            "kc": [
+                "2",
+                "3"
+            ],
+            "mc": [
+                "1",
+                "2"
+            ],
+            "mw": [
+                "1"
+            ],
+            "pc": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5"
+            ]
+        },
+        "simple": [
+            "spe"
+        ]
+    },
+    "effort": {
+        "COBOL": [
+            "miyazaki94"
+        ],
+        "Cocomo": {
+            "Cocomo-I": [
+                "coc81",
+                "nasa93"
+            ],
+            "Cocomo-II": [
+                "cocomosdr",
+                "nasa93-dem"
+            ]
+        },
+        "function-points": [
+            "Albrecht",
+            "china",
+            "kemerer",
+            "kitchenham"
+        ],
+        "isbsg": [
+            "cosmic",
+            "isbsg10"
+        ],
+        "personnel": [
+            "boetticher"
+        ],
+        "other": [
+            "maxwell"
+        ]
+    },
+    "issues": {
+        "complex": {
+            "bugreport": [
+                "eclipse",
+                "gnome",
+                "mozilla"
+            ],
+            "pits": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E",
+                "F"
+            ]
+        },
+        "simple": [
+            "datatrieve",
+            "mozilla4",
+            "mozilla13",
+            "mtdjedit",
+            "am1",
+            "mb2"
+        ]
+    },
+    "model": [
+        "bike",
+        "quantitative"
+    ],
+    "other": [
+        "cmmi",
+        "generics",
+        "qosdata"
+    ],
+    "repository": [
+        "nickel",
+        "reuse",
+        "xfree",
+        "xorg",
+        "abcus"
+    ],
+    "requirements": {
+        "complex": {
+            "nrp": [
+                "nrp-classic",
+                "nrp-realistic"
+            ]
+        },
+        "simple": [
+            "modis",
+            "nfr"
+        ]
+    },
+}
