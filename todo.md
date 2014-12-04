@@ -25,7 +25,7 @@ You will need:
 
 + copy wiki file to appropriate _posts directory
 + change filename to yyyy-mm-dd-filename.md
-+ +add YAML header, where "summary" is the summary listed in the file:
++ add YAML header, where "summary" is the summary listed in the file:
 
 ```
 ---
