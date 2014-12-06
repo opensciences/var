@@ -36,7 +36,7 @@ def removeExtraneousLinks(fileContents):
     return fileContents
 
 def reformatTables(fileContents):
-    sub = re.sub(r"When \| What", r"When \| What\r---- | ----", fileContents)
+    sub = re.sub(r"When \|\| What", r"When \| What\r---- | ----", fileContents)
     return re.sub(r"\|\| ([^|]+) \|\| ([^|]+) \|\|", r"\1 | \2", sub)
 
 def extractDateString(fileContents):
