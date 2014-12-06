@@ -26,7 +26,7 @@ def changeHeaders(fileContents):
     return re.sub(r"\n= ([^\n]+) =\n", r"\n#\1\n", fileContents)
 
 def reformatLinks(fileContents):
-    sub = re.sub(r"http([^\s]+)", r"[http\1 http\1]", fileContents)
+    sub = re.sub(r"[^\[]http([^\s]+)", r"[http\1 http\1]", fileContents)
     return re.sub(r"\[([^ ]+) ([^\]]+)\]", r"[\2](\1)", sub)
 
 def changeURLs(fileContents, relativePath):
