@@ -27,7 +27,8 @@ Before we get started, please remember to create all issues pertaining to the re
 ## 4. Filter for *target paper*s
 
 * For each "Maybe Has Data" paper, check if there is actually data to download. In some cases, there will be many downloads available. Probably only one of them is important. Figure out which download is important. You might have to email the paper owner.
-* Remove the paper's "Maybe Has Data" label, and add the "Target Paper" label
+* If the paper has no downloadable data, remove the "Maybe Has Data" label, add the "No Data" label, and close the issue.
+* If the paper DOES have downloadable data, remove the "Maybe Has Data" label, and add the "Target Paper" label
     * Leave a comment with
         * A hyperlink to the relevant data download
         * Email adresses of the paper owners
